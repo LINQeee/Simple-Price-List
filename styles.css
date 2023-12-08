@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(167, 247, 204, 0.5);
+    background-image: linear-gradient(225deg, rgba(167, 247, 204, 0.5) 0%, rgba(255, 251, 222, 0.5) 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    width: 400px;
+    height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #dadada;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cardName {
+    font-size: 25px;
+    font-weight: 400;
+    color: #4f4f4f;
+}
+
+.description {
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+.priceBox {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.priceBox h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #4f4f4f;
+}
+
+.priceBox span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #939393;
+}
+
+.abilityList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.abilityList li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.abilityList li i {
+    color: #64e164;
+}
+
+.abilityList li span {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+
+.buyButton {
+    border-radius: 25px;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    border: 1px solid black;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.buyButton:hover {
+    border-color: transparent;
+    background: black;
+    color: white;
+}
+
+.additionalInfo {
+    align-self: center;
+    color: #939393;
+    font-size: 12px;
+}
+
+.superCard {
+    border: 2px solid #ff6bbc;
+    position: relative;
+}
+
+.superCard .buyButton {
+    background: black;
+    color: white;
+    border-color: white;
+}
+
+.superCard .buyButton:hover {
+    border-color: black;
+    color: black;
+    background: white;
+}
+
+.advice {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff6bbc;
+    width: 120px;
+    height: 32px;
+    background: #ffebed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 2px solid #ff6bbc;
+    align-self: center;
+    position: absolute;
+    top: -16px;
+}
